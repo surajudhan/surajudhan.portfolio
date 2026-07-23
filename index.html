@@ -135,85 +135,69 @@
 	      </div>
 	    </div>
 	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<!--<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/about-me.png);">
-	          	 <div class="overlay"></div>
-	          	</div>-->
+	 <section id="home-section" class="hero">
+  <div class="slider-item">
+    
+    <div class="container">
+      <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+        
+       
+       <div class="one-third js-fullheight order-md-last img" 
+             style="background-image:url(images/about-me.png); 
+                    width: 40%; 
+                    background-size: contain; 
+                    background-repeat: no-repeat; 
+                    background-position: center center;">      
+        </div>
+	
 
+<!--	<div class="one-third order-md-last d-flex align-items-center justify-content-center">
+  <img src="images/about-me.png" alt="Suraj Udhan" class="img-fluid" style="max-height: 450px; object-fit: contain;">
+</div>-->
 
+        <!-- Text Content Block -->
+        <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+          <div class="text">
+            <span class="subheading">Hello!</span>
+            <h1 class="mb-4 mt-3">I'm <span>Suraj Udhan</span></h1>
 
-<div class="one-third js-fullheight order-md-last img" 
-     style="background-image:url(images/about-me.png); 
-            width: 40%; 
-            background-size: contain; 
-            background-repeat: no-repeat; 
-            background-position: center center;">
-  <div class="overlay"></div>
-</div>
+            <!-- Typing Animation Container -->
+            <span id="typing-animation"></span>
 
+            <script>
+              const typingAnimationElement = document.getElementById('typing-animation');
+              const typingTexts = ['Unity 2D, 3D, VR (Meta Quest)'];
 
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Suraj Udhan</span></h1>
+              function playTypingAnimation(text) {
+                for (let i = 0; i < text.length; i++) {
+                  setTimeout(() => {
+                    typingAnimationElement.textContent += text[i];
+                  }, i * 150);
+                }
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+                setTimeout(() => {
+                  typingAnimationElement.textContent = '';
+                  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                }, text.length * 200);
+              }
 
-						<script>
+              playTypingAnimation(typingTexts[0]);
+            </script>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+            <br><br>
+            <h2>A Unity Game Developer</h2>
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Unity 2D, 3D, VR (Meta Quest)',
-					//	'',
-					//	'',
-						];
+            <p style="display: none;">
+              <a href="https://www.youtube.com/@surajudhan" class="btn btn-primary py-3 px-4">YouTube</a> 
+              <a href="https://github.com/surajudhan" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+            </p>
+          </div>
+        </div>
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 150); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>A Unity Game Developer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			         
-						<p style="display: none;">
-							<a href="https://www.youtube.com/@surajudhan" class="btn btn-primary py-3 px-4">YouTube</a> 
-							<a href="https://github.com/surajudhan" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -376,13 +360,13 @@ delivering scalable and high-quality gaming experiences.
 						<span class="position">Aaryavarta Technologies</span>
 						<p class="mt-4">A game development company focused on delivering innovative multiplayer, mobile, and VR gaming experiences. As a Unity Game Developer, I contributed to gameplay systems, multiplayer features, UI development, performance optimization, and cross-team collaboration to create engaging player experiences. 
 							<ul>
-								<li>Developed and published 4+ hyper-casual Real-Time Multiplayer games using Unity and C# on Google Play and App Store, achieving 1,00,000+ downloads</li>
+								<li>Developed and published 4+ Real-Time Multiplayer games using Unity and C# on Google Play and App Store, achieving 1,00,000+ downloads</li>
 								<li>Designed and implemented reusable gameplay systems, UI frameworks, and modular game architecture to accelerate feature development across projects.</li>
 								<li>Integration of mobile services for analytics and ads like Firebase, Play Services, Unity Services, Admob.</li>
-								<li>Independently developed a full-featured Teen Patti card game, implementing core systems and optimizing performance through Object Pooling, reducing draw calls by 35% on Android devices.</li>
+								<li>Independently developed a full-featured Teen Patti card game, implementing core gameplay systems and optimizing performance using Object Pooling and Sprite Atlases, reducing draw calls by 15% and improving runtime efficiency on Android devices.</li>
 								<li>Integrated 3+ backend services (Node.js, Firebase, PlayFab) reducing development time for new feature rollouts.</li>
 								<li>Used Unity Profiler, Frame Debugger, and memory analysis tools to identify and resolve performance bottlenecks across mobile and VR projects.</li>
-								<li>Improved game performance through Object Pooling, asset optimization, memory management, and draw-call reduction techniques, resulting in 40% faster execution and 35% smaller application size.</li>
+								<li>Improved game performance through Object Pooling, asset optimization, memory management, and draw-call reduction techniques, resulting in 20% faster execution and 35% smaller application size.</li>
 								<li>Collaborated using Git-based version control workflows, code reviews, and Agile development practices.</li>
 							</ul>
 						</p>
@@ -438,7 +422,7 @@ delivering scalable and high-quality gaming experiences.
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1-iuyIsE_z_ljkWXUzl0bZ-GKHTBRgjfj/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="https://drive.google.com/file/d/1c19PObM8yqHNnXRa1fgUmiJd5IO0jhpL/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -529,20 +513,22 @@ delivering scalable and high-quality gaming experiences.
         <div class="row d-flex">
           <div class="col-md-6 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://play.google.com/store/apps/details?id=com.cash.game.carrom365new&pcampaignid=web_share" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/proj_1.jpg');">
+              <a href="https://play.google.com/store/apps/details?id=com.cash.game.carrom365new&pcampaignid=web_share" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/carrom.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading"><a href="https://play.google.com/store/apps/details?id=com.cash.game.carrom365new&pcampaignid=web_share">Carrom 365 Real Game</a></h3>
-                <li>Developed synchronized multiplayer sessions supporting 4-player modes.</li>
-				<li>Synchronized physics outcomes and player actions across multiplayer sessions.</li>
-				<li>Built turn management systems and enforced official Carrom gameplay rules.</li>
+                <li>Developed synchronized multiplayer sessions supporting 4-player gameplay with reliable real-time networking.</li>
+				<li>Optimized rendering by implementing Sprite Atlas, reducing draw calls and improving rendering performance on mobile devices.</li>
+				<li>Reduced unnecessary server calls through optimized client-server communication, improving gameplay responsiveness while lowering server load and operational costs.</li>
+				<li>Implemented AdMob monetization and an in-game coin-based striker theme purchase system, enhancing player engagement and supporting game revenue.</li>
+			
               </div>
             </div>
           </div>
           <div class="col-md-6 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://play.google.com/store/apps/details?id=com.cash.money.teenpatti&pcampaignid=web_share" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/proj_2.jpg');">
+              <a href="https://play.google.com/store/apps/details?id=com.cash.money.teenpatti&pcampaignid=web_share" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/teenpatti.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
@@ -551,13 +537,14 @@ delivering scalable and high-quality gaming experiences.
                 <li>Implemented full game-state synchronization between players using WebSocket (Socket.IO).</li>
 				<li>Collaborated with designers and developers to deliver responsive, scalable, and maintainable game systems.</li>
 				<li>Implemented multiple Teen Patti game modes, including AK-47, Lowest Joker, and Highest Joker.</li>
+				<li>Followed clean architecture by applying design patterns such as Singleton, MVC, Observer and Object Pooling improving code readability, maintainability, and performance.</li>	
 				
               </div>
             </div>
           </div>
           <div class="col-md-6 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://play.google.com/store/apps/details?id=com.cash.money.pokerchamp&pcampaignid=web_share" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/proj_3.jpg');">
+              <a href="https://play.google.com/store/apps/details?id=com.cash.money.pokerchamp&pcampaignid=web_share" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/pokerchamp.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
@@ -565,30 +552,31 @@ delivering scalable and high-quality gaming experiences.
                <li>Developed and enhanced UI systems for a real-time Poker game using Unity, improving user experience and gameplay flow.</li>
                <li>Implemented gameplay improvements, optimized player interactions, and integrated new game modes and features.</li>
 			   <li>handled edge cases like disconnection and reconnection logic.</li>
+			   <li>Implemented multiple Poker game modes, including Omaha and PLO (Pot-Limit Omaha), to enhance gameplay variety and player engagement.</li>
 			   <li>Integrated wallet API for chip balance management and real-time transaction handling.</li>
               </div>
             </div>
           </div>
           <div class="col-md-6 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/proj_4.jpg');">
+				<a href="" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/vrhome.png');">
 				</a>
 				<div class="text mt-3 float-right d-block">
-  
 			<h3 class="heading"><a href="">VR Home Visualization 3D - Meta Quest </a></h3>
 			<li> Developed an immersive VR home-visualization experience from scratch for Meta Quest as part of a 3-member development team, featuring 6 interactive walkthrough zones.</li>
-			<li>Enabled dynamic customization of wall materials, flooring, and 10+ material options per furniture item.</li>
-			<li>"Improved rendering efficiency through draw call batching and shader optimization, cutting rendering cost by 20% while maintaining stable framerates.</li>
+			<li>Implemented World Space Canvas interactions, allowing users to customize wall colors, flooring, and furniture materials with 10+ material options.</li>
+			<li>Developed VR grab-and-place mechanics, enabling users to pick up, move, and reposition furniture throughout the house using Meta Quest controllers.</li>
+			<li>Optimized rendering performance using Static Batching, GPU Instancing, Occlusion Culling, draw call batching, reducing rendering cost by 30% while maintaining stable frame rates on Meta Quest.</li>
 				</div>
 			  </div>
 			</div>
+
           <div class="col-md-6 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				<a href="#" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/handcricket.png');">
 				</a>
 				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="#">Hand Cricket Game</a></h3>
+				  <h3 class="heading"><a href="#">Hand Cricket</a></h3>
 				  <li>Led end-to-end UI development and implementation, collaborating directly with artists and designers to translate concepts into polished in-game interfaces.</li>
 				  <li>Developed gameplay systems covering the complete multiplayer flow, including player matchmaking, game state management, scoring logic, and result screens.</li>
 				  <li> Worked closely with the backend team to integrate multiplayer services, synchronize gameplay data, and ensure a seamless online experience.</li>
@@ -596,6 +584,49 @@ delivering scalable and high-quality gaming experiences.
 				</div>
 			  </div>
 			</div>
+
+			<div class="col-md-6 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/casinoroulette.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="#">Casino Roulette</a></h3>
+				  <li>Enhanced existing gameplay features in live real-money casino games, including Roulette and Andar Bahar, by implementing new functionality and resolving production issues.</li>
+				  <li>Implemented betting features such as Repeat Previous Bet, Undo Bet, Redo Bet, Clear All Bets, and sequential bet placement to improve the player experience.</li>
+				  <li>Enhanced the game UI by implementing dynamic bet history, result history, and color-coded winning number displays based on game outcomes.</li>
+				  <li>Integrated sound effects for gameplay events and UI interactions to improve player feedback and immersion.</li>
+				</div>
+			  </div>
+			</div>
+				<!--2D Endless Runner-->
+            <div class="col-md-6 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/2drunner.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="#">Endless Runner 2D</a></h3>
+				<li>Developed a 2D Endless Runner game in Unity 6 featuring procedural ground generation, dynamic obstacle spawning, and progressive difficulty scaling.</li>
+                <li>Implemented object pooling for reusable ground and obstacle objects, reducing memory allocations and improving runtime performance.</li>
+                <li>Designed configurable gameplay systems using ScriptableObjects to manage obstacle speed, spawn intervals, and game progression without code changes.</li>
+                <li>Implemented player movement, score tracking, game state management, responsive UI, and integrated background music and sound effects to enhance the gameplay experience.</li>
+                <li>Optimized gameplay by minimizing garbage collection, reusing game objects, and implementing an efficient spawning system for consistent frame rates.</li></div>
+			  </div>
+			</div>
+				<!--Ludo Cricket-->
+				<div class="col-md-6 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect icon-thumb" style="background-image: url('images/ludo.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="#">Ludo</a></h3>
+				<li>Optimized gameplay code and UI systems to improve performance, responsiveness, and overall user experience.</li>
+                <li>Implemented an in-game store where players can purchase and unlock multiple token and dice animation skins using in-game currency.</li>
+                <li>Implemented the Ludo Cricket game mode, where player tokens collect runs placed on the board, with real-time score tracking and match progression.</li>
+                <li>Implemented dynamic cricket umpire animations triggered by in-game events such as Four, Six, Wicket, Wide, and No Ball.</li>
+				<li>Collaborated with backend developers to implement real-time score synchronization and game-winning conditions.</li>
+			  </div>
+			</div>
+
         </div>
 	  </div>
     </section>
